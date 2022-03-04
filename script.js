@@ -34,7 +34,7 @@ function verifyPin() {
     const pin = document.getElementById('random-value');
     const typedPin = document.getElementById('typed-input');
 
-    if (pin === typedPin) {
+    if (pin.value === typedPin.value) {
         displayMatchedResul('block', 'none')
     } else {
         displayMatchedResul('none', 'block')
